@@ -4,5 +4,5 @@ resources:
 - ../../k8s/
 images:
 - digest: sha256:9459a40fa861a7e3b64f2b00730bb459031423f9acaa6b8f36a7441c8dadbd94
-  name: quay.io/rohanp/newdemo:latest
-  newName: quay.io/rohanp/newdemo
+  name: quay.io/rohanp/warproject
+  newName: quay.io/rohanp/warproject
