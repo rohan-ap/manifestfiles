@@ -3,6 +3,6 @@ kind: Kustomization
 resources:
 - ../../k8s/
 images:
-- digest: sha256:8eb930b4889279ec3e6b15eec4121071ff900dee6ccd2a0dc981e60898064a88
+- digest: sha256:4f6697fe6493737956a747c1b62282383a515a94558277eff0c1457b34b92a2e
   name: quay.io/rohanp/newdemo:latest
   newName: quay.io/rohanp/newdemo
