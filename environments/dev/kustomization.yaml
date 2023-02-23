@@ -3,9 +3,6 @@ kind: Kustomization
 resources:
 - ../../k8s/
 images:
-- digest: sha256:9459a40fa861a7e3b64f2b00730bb459031423f9acaa6b8f36a7441c8dadbd94
-  name: quay.io/rohanp/warproject
-  newName: quay.io/rohanp/warproject
 - digest: sha256:8d7a9a1798e515628f35aeab733eea401d3789454c27821cb5d9e91b5c954b0c
-  name: quay.io/rohanp/warproject:latest
+  name: quay.io/rohanp/warproject
   newName: quay.io/rohanp/warproject
