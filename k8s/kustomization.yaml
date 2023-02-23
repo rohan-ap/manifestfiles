@@ -1,11 +1,9 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
 resources:
 - deployment.yaml
 - route.yaml
 - service.yaml
-apiVersion: kustomize.config.k8s.io/v1beta1
-kind: Kustomization
-resources:
-- ../../k8s/
 images:
 - digest: sha256:34cb9e01e8c5a3059bc97fb245f340ce8203d620bbbac7bdad531740409a0f72
   name: quay.io/rohanp/warproject
