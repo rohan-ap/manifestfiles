@@ -5,20 +5,20 @@ metadata:
     app.openshift.io/vcs-uri: 'https://github.com/rohan-ap/sonarqube.git'
     app.openshift.io/vcs-ref: 'master'
   labels:
-    app: sonarqube
-  name: sonarqube
+    app: warproject
+  name: warproject
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: sonarqube
+      app: warproject
   template:
     metadata:
       labels:
-        app: sonarqube
+        app: warproject
     spec:
       containers:
-        - image: quay.io/rohanp/newdemo
+        - image: quay.io/rohanp/warproject:latest
           imagePullPolicy: Always
           name: sonarqube
           ports:
