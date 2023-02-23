@@ -15,7 +15,7 @@ spec:
         app: warproject
     spec:
       containers:
-        - image: quay.io/rohanp/warproject
+        - image: quay.io/rohanp/warproject:1.1-SNAPSHOT
           imagePullPolicy: Always
           name: sonarqube
           ports:
