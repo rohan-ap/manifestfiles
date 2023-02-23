@@ -6,3 +6,6 @@ images:
 - digest: sha256:8d7a9a1798e515628f35aeab733eea401d3789454c27821cb5d9e91b5c954b0c
   name: quay.io/rohanp/warproject
   newName: quay.io/rohanp/warproject
+- digest: sha256:cf892429cd3941b33ff9eb43b898ba81b6bf31aaaaf52514db0c978b4994b0d3
+  name: quay.io/rohanp/warproject:latest
+  newName: quay.io/rohanp/warproject
