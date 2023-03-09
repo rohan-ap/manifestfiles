@@ -5,6 +5,6 @@ resources:
 - route.yaml
 - service.yaml
 images:
-- digest: sha256:4d2535fd62e9d48e97baa1641cd250736007a1de8c3e36f858259a32eabd8e3f
+- digest: sha256:7c53ae4e793e04562c79d843a8d64b297c8879c191f950efbf24dcb18299fe4d
   name: quay.io/rohanp/warproject
   newName: quay.io/rohanp/warproject:a95d7fa0d54a5c39df07f164b1488db04930f057
