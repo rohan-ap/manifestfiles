@@ -1,25 +1,25 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: productpage-latest
+  name: productpage-1.1-SNAPSHOT
   labels:
     app: productpage
-    version: latest
+    version: 1.1-SNAPSHOT
 spec:
   replicas: 1
   selector:
     matchLabels:
       app: productpage
-      version: latest
+      version: 1.1-SNAPSHOT
   template:
     metadata:
       annotations:
         sidecar.istio.io/inject: "true"
       labels:
         app: productpage
-        version: latest
+        version: 1.1-SNAPSHOT
     spec:
       containers:
         - name: productpage
-          image: quay.io/rohanp/warproject:latest
+          image: quay.io/rohanp/warproject:1.1-SNAPSHOT
           imagePullPolicy: IfNotPresent
