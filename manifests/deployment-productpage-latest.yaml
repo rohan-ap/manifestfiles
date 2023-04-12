@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: productpage-latest
+  labels:
+    app: productpage
+    version: latest
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: productpage
+      version: latest
+  template:
+    metadata:
+      annotations:
+        sidecar.istio.io/inject: "true"
+      labels:
+        app: productpage
+        version: latest
+    spec:
+      containers:
+        - name: productpage
+          image: quay.io/rohanp/demo-istio/productpage:latest
+          imagePullPolicy: IfNotPresent
