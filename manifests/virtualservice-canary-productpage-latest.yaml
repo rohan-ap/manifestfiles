@@ -7,3 +7,7 @@ spec:
     - productpage
   http:
     - route:
+        - destination: productpage
+          weight: "90"
+        - destination: {host: productpage, subset: "v1\nlatest"}
+          weight: "90"
