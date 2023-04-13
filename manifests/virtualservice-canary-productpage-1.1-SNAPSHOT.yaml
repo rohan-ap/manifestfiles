@@ -1,13 +1,17 @@
 apiVersion: networking.istio.io/v1alpha3
 kind: VirtualService
 metadata:
-  name: productpage-1.1-snpshot
+  name: productpage-1.1-snapshot
 spec:
   hosts:
     - productpage
   http:
     - route:
-        - destination: productpage
-          weight: "90"
-        - destination: {host: productpage, subset: "v1\n1.1-SNAPSHOT"}
-          weight: "90"
+        - destination:
+            host: productpage
+          weight: 90
+        - destination:
+            host: productpage
+            subset: v1.1-SNAPSHOT
+          weight: 10
+
