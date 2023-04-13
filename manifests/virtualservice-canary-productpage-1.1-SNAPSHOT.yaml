@@ -9,11 +9,11 @@ spec:
     - route:
         - destination: productpage
           weight: "45"
-        - destination: {host: productpage, subset: "v1\nlatest\n1.1-SNAPSHOT"}
+        - destination: {host: productpage, subset: "v1.nlatest.n1.1-SNAPSHOT"}
           weight: "45"
         - destination: productpage
           weight: "45"
-        - destination: {host: productpage, subset: "v1\nlatest\n1.1-SNAPSHOT"}
+        - destination: {host: productpage, subset: "v1.nlatest.n1.1-SNAPSHOT"}
           weight: "45"
-        - destination: {host: productpage, subset: "v1\nlatest\n1.1-SNAPSHOT"}
+        - destination: {host: productpage, subset: "v1.nlatest.n1.1-SNAPSHOT"}
           weight: "45"
