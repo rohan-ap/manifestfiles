@@ -21,7 +21,12 @@ spec:
                   v1
                   1.1-SNAPSHOT
                   1.1-SNAPSHOT
-          weight: "45"
+            subset: |-
+              v1
+              1.1-SNAPSHOT
+              1.1-SNAPSHOT
+              1.1-SNAPSHOT
+          weight: "30"
         - destination:
             host: productpage
             0:
@@ -35,8 +40,21 @@ spec:
                   v1
                   1.1-SNAPSHOT
                   1.1-SNAPSHOT
-          weight: "45"
-        - destination: {0: [{host: productpage}, {subset: "v1\n1.1-SNAPSHOT\n1.1-SNAPSHOT"}, {host: productpage}, {subset: "v1\n1.1-SNAPSHOT\n1.1-SNAPSHOT"}]}
-          weight: "45"
-        - destination: {0: [{host: productpage}, {subset: "v1\n1.1-SNAPSHOT\n1.1-SNAPSHOT"}]}
-          weight: "45"
+            subset: |-
+              v1
+              1.1-SNAPSHOT
+              1.1-SNAPSHOT
+              1.1-SNAPSHOT
+          weight: "30"
+        - destination: {0: [{host: productpage}, {subset: "v1\n1.1-SNAPSHOT\n1.1-SNAPSHOT"}, {host: productpage}, {subset: "v1\n1.1-SNAPSHOT\n1.1-SNAPSHOT"}], host: productpage, subset: "v1\n1.1-SNAPSHOT\n1.1-SNAPSHOT\n1.1-SNAPSHOT"}
+          weight: "30"
+        - destination: {0: [{host: productpage}, {subset: "v1\n1.1-SNAPSHOT\n1.1-SNAPSHOT"}], host: productpage, subset: "v1\n1.1-SNAPSHOT\n1.1-SNAPSHOT\n1.1-SNAPSHOT"}
+          weight: "30"
+        - destination: productpage
+          weight: "30"
+        - destination: {host: productpage, subset: "v1\n1.1-SNAPSHOT\n1.1-SNAPSHOT\n1.1-SNAPSHOT"}
+          weight: "30"
+        - destination: {host: productpage, subset: "v1\n1.1-SNAPSHOT\n1.1-SNAPSHOT\n1.1-SNAPSHOT"}
+          weight: "30"
+        - destination: {host: productpage, subset: "v1\n1.1-SNAPSHOT\n1.1-SNAPSHOT\n1.1-SNAPSHOT"}
+          weight: "30"
