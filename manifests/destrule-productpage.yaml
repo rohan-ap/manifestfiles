@@ -8,12 +8,3 @@ spec:
     - name: v1
       labels:
         version: v1
-    - name: '1.1-SNAPSHOT'
-      labels:
-        version: 1.1-SNAPSHOT
-    - name: '1.1-SNAPSHOT'
-      labels:
-        version: 1.1-SNAPSHOT
-    - name: '1.1-SNAPSHOT'
-      labels:
-        version: 1.1-SNAPSHOT
