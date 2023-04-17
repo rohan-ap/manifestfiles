@@ -1,23 +1,23 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: productpage-1.1-snapshot
+  name: productpage-1.1-SNAPSHOT
   labels:
     app: productpage
-    version: 1.1-snapshot
+    version: 1.1-SNAPSHOT
 spec:
   replicas: 1
   selector:
     matchLabels:
       app: productpage
-      version: 1.1-snapshot
+      version: 1.1-SNAPSHOT
   template:
     metadata:
       annotations:
         sidecar.istio.io/inject: "true"
       labels:
         app: productpage
-        version: 1.1-snapshot
+        version: 1.1-SNAPSHOT
     spec:
       containers:
         - name: productpage
