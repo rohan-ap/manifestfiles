@@ -1,25 +1,25 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: productpage-1.1-SNAPSHOT
+  name: productpage-dev
   labels:
     app: productpage
-    version: 1.1-SNAPSHOT
+    version: dev
 spec:
   replicas: 1
   selector:
     matchLabels:
       app: productpage
-      version: 1.1-SNAPSHOT
+      version: dev
   template:
     metadata:
       annotations:
         sidecar.istio.io/inject: "true"
       labels:
         app: productpage
-        version: 1.1-SNAPSHOT
+        version: dev
     spec:
       containers:
         - name: productpage
-          image: quay.io/rohanp/warproject:1.1-SNAPSHOT
+          image: quay.io/rohanp/warproject:dev
           imagePullPolicy: IfNotPresent
