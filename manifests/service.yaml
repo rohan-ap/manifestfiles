@@ -3,6 +3,7 @@ kind: Service
 metadata:
   name: productpage-dev
 spec:
+  type: NodePort
   selector:
     app: productpage
     version: dev
