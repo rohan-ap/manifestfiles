@@ -11,3 +11,6 @@ spec:
     - name: dev
       labels:
         version: dev
+    - name: dev
+      labels:
+        version: dev
