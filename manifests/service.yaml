@@ -3,12 +3,11 @@ kind: Service
 metadata:
   name: productpage-dev
 spec:
-  type: NodePort
-  ports:
-    - name: 8080-tcp
-      port: 8080
-      targetPort: 8080
-      protocol: TCP
   selector:
     app: productpage
     version: dev
+  ports:
+    - name: http
+      protocol: TCP
+      port: 8080
+      targetPort: 8080
