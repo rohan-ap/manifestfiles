@@ -7,6 +7,6 @@ spec:
     targetPort: 8080-tcp
   to:
     kind: Service
-    name: productpage
+    name: productpage-dev
   tls:
     termination: edge
