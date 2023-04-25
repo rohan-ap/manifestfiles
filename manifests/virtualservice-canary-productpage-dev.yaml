@@ -7,15 +7,3 @@ spec:
     - productpage
   http:
     - route:
-        - destination:
-            host: productpage
-            subset: dev
-          weight: 30
-        - destination:
-            host: productpage
-            subset: dev
-          weight: 30
-        - destination:
-            host: productpage
-            subset: dev
-          weight: 30
