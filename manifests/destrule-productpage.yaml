@@ -8,12 +8,3 @@ spec:
     - name: v1
       labels:
         version: v1
-    - name: dev
-      labels:
-        version: dev
-    - name: dev
-      labels:
-        version: dev
-    - name: dev
-      labels:
-        version: dev
