@@ -11,4 +11,4 @@ spec:
   tls:
     insecureEdgeTerminationPolicy: Redirect
     termination: edge
-  path: /WebApp
+  Path: /WebApp
